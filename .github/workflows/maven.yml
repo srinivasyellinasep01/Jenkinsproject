@@ -33,8 +33,7 @@ jobs:
       run: |
         aws configure set aws_access_key_id ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws configure set aws_secret_key_id ${{ secrets.AWS_SECRET_KEY_ID }}
-        env: 
-         AWS_DEFAULT_REGION:us-east-1
+        aws configure set aws_default_region us-east-1        
     - name: AWS Action - Secrets Manager
   # You may pin to the exact commit or the version.
   # uses: bitovi/github-actions-aws-secrets-manager@86f40dd91ac8bcb1e9424c8420a70d2050494a0c
