@@ -34,7 +34,7 @@ jobs:
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_KEY_ID }}
-        aws-region: us-east-1       
+        aws-region: us-west-2       
     - name: AWS Action - Secrets Manager
   # You may pin to the exact commit or the version.
   # uses: bitovi/github-actions-aws-secrets-manager@86f40dd91ac8bcb1e9424c8420a70d2050494a0c
